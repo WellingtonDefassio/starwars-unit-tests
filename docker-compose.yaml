@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  mysql:
+    build:
+      dockerfile: docker/Dockerfile
+      context: .
+    image: mysql-starwars
+    container_name: mysql-starwars
+    ports:
+      - "3306:3306"
+    volumes:
+      - C:\Users\welld\Documents\mysql-volumes:/var/lib/mysql
